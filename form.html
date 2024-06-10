@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="table.html" method="post" onsubmit="validate()">
+        <h1>Form</h1>
+        <label for="fs">First Name:</label>
+        <input type="text" name="fs" id="fs">
+        <br>
+        <label for="ls">Last Name:</label>
+        <input type="text" name="ls" id="ls">
+        <br>
+        <label for="un">Username:</label>
+        <input type="text" name="un" id="un">
+        <br>
+        <label for="pw">Password:</label>
+        <input type="password" name="pw" id="pw">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+        <br>
+        <label for="id">ID No:</label>
+        <input type="number">
+        <br>
+        <input type="submit">
+    </form>
+    <script>
+    let x=document.getElementById("fs");
+    let y=document.getElementById("ls");
+    let z=document.getElementById("un");
+    let a=document.getElementById("pw");
+    let b=document.getElementById("email");
+    let c=document.getElementById("dob");
+    let d=document.getElementById("id");
+    function validate(){
+        if(x.value.trim()==""||y.value.trim()==""||z.value.trim()==""||a.value.trim()==""||b.value.trim()==""||c.value.trim()==""||d.value.trim()==""){
+            alert("No blank values allowed");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    </script>
+</body>
+
+</html>
